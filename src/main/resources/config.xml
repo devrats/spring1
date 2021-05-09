@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-<bean class="com.example.demo.Student" name="student1">
+<bean class="com.example.basicbean.Student" name="student1">
     <property name="studentID" >
         <value>12</value>
     </property>
@@ -17,42 +17,28 @@
         <value>agra</value>
     </property>
 </bean>
-    <bean class="com.example.demo.Student" name="student2" p:studentID="123" p:studentName="ramu" p:studentAddress="noida"/>
-    <bean class="com.example.demo.Student" name="student3">
+    <bean class="com.example.basicbean.Student" name="student2" p:studentID="123" p:studentName="ramu" p:studentAddress="noida"/>
+    <bean class="com.example.basicbean.Student" name="student3">
         <property name="studentAddress" value="delhi"/>
         <property name="studentName" value="shyamu"/>
         <property name="studentID" value="1234"/>
     </bean>
-    <bean class="com.example.demo.Employee" name="employee">
-        <constructor-arg>
-            <list>
-                <value></value>
-            </list>
-        </constructor-arg>
+    <bean class="com.example.basicbean.Employee" name="employee">
         <property name="phone">
             <list>
-                <value>
-                    9759860799
-                </value>
-                <value>
-                    9457655010
-                </value>
-                <value>
-                    8532857250
-                </value>
-                <value>
-                    8532066858
-                </value>
-                <value>
-                    7983458989
-                </value>
-                <value>
-                    9027214058
-                </value>
-                <value>
-                    8193810397
-                </value>
+                <value>9759860799</value>
+                <value>9457655010</value>
+                <value>8532857250</value>
+                <value>8532066858</value>
+                <value>7983458989</value>
+                <value>9027214058</value>
+                <value>8193810397</value>
             </list>
         </property>
+    </bean>
+    <bean class="com.example.basicbean.Person" name="person" c:_0="ram" c:_1="12"/>
+    <bean class="com.example.basicbean.Person" name="person2">
+        <constructor-arg value="ram" index="0" type="java.lang.String"/>
+        <constructor-arg value="12" index="1" type="int"/>
     </bean>
 </beans>

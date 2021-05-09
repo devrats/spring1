@@ -5,7 +5,7 @@
  *   File: Employee.java
  */
 
-package com.example.demo;
+package com.example.basicbean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,10 @@ import java.util.Objects;
 public class Employee {
 
     List<String> phone = new ArrayList<>();
+
+    public Employee() {
+
+    }
 
     @Override
     public String toString() {

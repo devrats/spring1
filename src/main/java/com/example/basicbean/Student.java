@@ -5,7 +5,7 @@
  *   File: Student.java
  */
 
-package com.example.demo;
+package com.example.basicbean;
 
 import java.util.Objects;
 

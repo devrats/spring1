@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.basicbean;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +14,8 @@ public class DemoApplication {
         System.out.println("context.getBean(\"student2\") = " + context.getBean("student2"));
         System.out.println("context.getBean(\"student3\") = " + context.getBean("student3"));
         System.out.println("context.getBean(\"employee\") = " + context.getBean("employee"));
+        System.out.println("context.getBean(\"person\") = " + context.getBean("person"));
+        System.out.println("context.getBean(\"person2\") = " + context.getBean("person2"));
         SpringApplication.run(DemoApplication.class, args);
     }
 }

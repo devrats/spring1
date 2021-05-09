@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+<util:list list-class="java.util.LinkedList" id="list">
+    <value>vijay</value>
+    <value>vishnu</value>
+    <value>rohit</value>
+</util:list>
+    <util:map map-class="java.util.HashMap" id="map">
+        <entry key="mother"  value="Shashi" value-type="java.lang.String"/>
+        <entry key="father" value="yagya" value-type="java.lang.String"/>
+        <entry key="wife" value="nidhi" value-type="java.lang.String"/>
+    </util:map>
+    <bean class="com.example.standalonecollection.Person" name="person">
+        <property name="friend" ref="list"/>
+        <property name="relation" ref="map"/>
+    </bean>
+</beans>
