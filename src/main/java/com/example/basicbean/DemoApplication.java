@@ -9,13 +9,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DemoApplication {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-        System.out.println("context.getBean(\"student1\") = " + context.getBean("student1"));
-        System.out.println("context.getBean(\"student2\") = " + context.getBean("student2"));
-        System.out.println("context.getBean(\"student3\") = " + context.getBean("student3"));
-        System.out.println("context.getBean(\"employee\") = " + context.getBean("employee"));
-        System.out.println("context.getBean(\"person\") = " + context.getBean("person"));
-        System.out.println("context.getBean(\"person2\") = " + context.getBean("person2"));
+        ApplicationContext basicBean = new ClassPathXmlApplicationContext("config.xml");
+        System.out.println("basicBean.getBean(\"student1\") = " + basicBean.getBean("student1"));
+        System.out.println("basicBean.getBean(\"student2\") = " + basicBean.getBean("student2"));
+        System.out.println("basicBean.getBean(\"student3\") = " + basicBean.getBean("student3"));
+        System.out.println("basicBean.getBean(\"employee\") = " + basicBean.getBean("employee"));
+        System.out.println("basicBean.getBean(\"person\") = " + basicBean.getBean("person"));
+        System.out.println("basicBean.getBean(\"person2\") = " + basicBean.getBean("person2"));
         SpringApplication.run(DemoApplication.class, args);
     }
 }
