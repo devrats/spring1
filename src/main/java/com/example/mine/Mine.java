@@ -8,9 +8,9 @@
 package com.example.mine;
 
 public class Mine {
-    String name = "NIDHI SINGH";
+    String NAME = "NIDHI SINGH";
     public String getName() {
-        return name;
+        return NAME;
     }
     public Mine() {}
 }
