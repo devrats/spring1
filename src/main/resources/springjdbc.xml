@@ -16,8 +16,8 @@
     <bean class="org.springframework.jdbc.core.JdbcTemplate" name="template">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    <bean class="com.example.springjdbc.StudentRowMapper" name="mapper"/>
-    <bean class="com.example.springjdbc.StudentDao" name="studentDao">
+    <bean class="com.example.springjdbc.withxml.StudentRowMapper" name="mapper"/>
+    <bean class="com.example.springjdbc.withxml.StudentDao" name="studentDao">
         <property name="jdbcTemplate" ref="template"/>
         <property name="rowMapper" ref="mapper"/>
     </bean>

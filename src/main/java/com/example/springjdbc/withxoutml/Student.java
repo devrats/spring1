@@ -5,7 +5,7 @@
  *   File: Student.java
  */
 
-package com.example.springjdbc;
+package com.example.springjdbc.withxoutml;
 
 import java.util.Objects;
 

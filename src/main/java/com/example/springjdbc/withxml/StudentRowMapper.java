@@ -5,7 +5,7 @@
  *   File: StudentRowMapper.java
  */
 
-package com.example.springjdbc;
+package com.example.springjdbc.withxml;
 
 import org.springframework.jdbc.core.RowMapper;
 

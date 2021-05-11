@@ -5,7 +5,7 @@
  *   File: Main.java
  */
 
-package com.example.springjdbc;
+package com.example.springjdbc.withxml;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

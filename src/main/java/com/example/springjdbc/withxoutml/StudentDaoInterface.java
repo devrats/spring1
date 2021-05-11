@@ -1,4 +1,4 @@
-package com.example.springjdbc;
+package com.example.springjdbc.withxoutml;
 
 import java.util.List;
 
