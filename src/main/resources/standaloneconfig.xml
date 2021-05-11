@@ -10,11 +10,12 @@
     <value>vijay</value>
     <value>vishnu</value>
     <value>rohit</value>
+    <value>#{new com.example.mine.Mine().getName}</value>
 </util:list>
     <util:map map-class="java.util.HashMap" id="map">
         <entry key="mother"  value="Shashi" value-type="java.lang.String"/>
         <entry key="father" value="yagya" value-type="java.lang.String"/>
-        <entry key="wife" value="nidhi" value-type="java.lang.String"/>
+        <entry key="wife" value="#{new com.example.mine.Mine().getName}" value-type="java.lang.String"/>
     </util:map>
     <bean class="com.example.standalonecollection.Person" name="person">
         <property name="friend" ref="list"/>

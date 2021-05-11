@@ -11,13 +11,13 @@
     <bean class="com.example.aotowire.annotation.Family" name="family">
         <property name="mother" value="Shashi Bala Sharma"/>
         <property name="father" value="Yagya datt sharma"/>
-        <property name="wife" value="Nidhi Singh"/>
+        <property name="wife" value="#{new com.example.mine.Mine().getName}"/>
         <property name="child" value="shrivanya"/>
     </bean>
     <bean class="com.example.aotowire.annotation.Family" name="family1">
         <property name="mother" value="Shashi Bala Sharma"/>
         <property name="father" value="Yagya datt sharma"/>
-        <property name="wife" value="Nidhi Singh"/>
+        <property name="wife" value="#{new com.example.mine.Mine().getName}"/>
         <property name="child" value="shrivanya"/>
     </bean>
     <bean class="com.example.aotowire.annotation.Employee" name="employee"/>

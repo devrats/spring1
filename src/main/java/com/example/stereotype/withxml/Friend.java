@@ -25,13 +25,13 @@ public class Friend {
     @Value("#{3>45}")
     Boolean isFriendGood;
 
-    @Value("#{new com.example.stereotype.withxml.BestFriend('Nidhi')}")
+    @Value("#{new com.example.stereotype.withxml.BestFriend(new com.example.mine.Mine().getName)}")
     BestFriend bestFriend;
 
     @Value("#{T(java.lang.Math).PI}")
     double pi;
 
-    @Value("#{new com.example.stereotype.withxml.BestFriend('Nidhi').doLove()}")
+    @Value("#{new com.example.stereotype.withxml.BestFriend(new com.example.mine.Mine().getName()).doLove()}")
     String doLove;
 
     @Value("#{T(com.example.stereotype.withxml.BestFriend).best()}")

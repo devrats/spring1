@@ -11,12 +11,12 @@
 
     </context:annotation-config>
     <bean class="com.example.lifecycle.xml.Friend" name="friend" init-method="init" destroy-method="destroy">
-        <property name="name" value="Nidhi"/>
+        <property name="name" value="#{new com.example.mine.Mine().getName}"/>
     </bean>
     <bean class="com.example.lifecycle.interfacee.Life" name="life">
-        <property name="name" value="Nidhi"/>
+        <property name="name" value="#{new com.example.mine.Mine().getName}"/>
     </bean>
     <bean class="com.example.lifecycle.annotatin.Crush" name="crush">
-        <property name="name" value="Nidhi"/>
+        <property name="name" value="#{new com.example.mine.Mine().getName}"/>
     </bean>
 </beans>
