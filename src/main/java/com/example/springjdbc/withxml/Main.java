@@ -14,6 +14,8 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("springjdbc.xml");
         StudentDao studentDao = (StudentDao) context.getBean("studentDao");
+        Student student = new Student("devvrat",19,"Btech");
+        studentDao.insert(student);
         System.out.println(studentDao.showAll());
     }
 
