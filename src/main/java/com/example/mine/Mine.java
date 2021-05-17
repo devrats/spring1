@@ -8,7 +8,7 @@
 package com.example.mine;
 
 public class Mine {
-    String NAME = "NIDHI SINGH";
+    String NAME = "Nidhi Singh";
     public String getName() {
         return NAME;
     }

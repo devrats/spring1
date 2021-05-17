@@ -7,6 +7,7 @@
 
 package com.example.springjdbc.withxoutml;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -21,7 +22,10 @@ public class StudentDao implements StudentDaoInterface {
     private final String DELETE_QUERY = "DELETE FROM Student WHERE Age = ?";
     private final String SHOW_ONE_QUERY = "SELECT * FROM Student WHERE Age = ?";
     private final String SHOW_ALL = "SELECT * FROM Student";
+
+    @Autowired
     private JdbcTemplate jdbcTemplate;
+    @Autowired
     private StudentRowMapper rowMapper;
 
     public StudentDao() {

@@ -20,29 +20,28 @@ import javax.sql.DataSource;
 public class JavaConfig {
 
     @Bean("dataSource")
-    public DriverManagerDataSource getDriverManagerDataSource(){
+    public DriverManagerDataSource getDriverManagerDataSource() {
         DriverManagerDataSource driverManagerDataSource = new
-                DriverManagerDataSource("jdbc:mysql://localhost:3306/springjdbc","root","");
+                DriverManagerDataSource("jdbc:mysql://localhost:3306/springjdbc", "root", "");
         return driverManagerDataSource;
     }
 
     @Bean("mapper")
-    public StudentRowMapper getStudentRowMapper(){
+    public StudentRowMapper getStudentRowMapper() {
         StudentRowMapper studentRowMapper = new StudentRowMapper();
         return studentRowMapper;
     }
 
     @Bean("template")
-    public JdbcTemplate getJdbcTemplate(){
-        DataSource dataSource;
+    public JdbcTemplate getJdbcTemplate() {
         JdbcTemplate jdbcTemplate =
                 new JdbcTemplate(getDriverManagerDataSource());
         return jdbcTemplate;
     }
 
     @Bean("studentDao")
-    public StudentDao getStudentDao(){
-        StudentDao studentDao = new StudentDao(getJdbcTemplate(),getStudentRowMapper());
+    public StudentDao getStudentDao() {
+        StudentDao studentDao = new StudentDao(getJdbcTemplate(), getStudentRowMapper());
         return studentDao;
     }
 }
